@@ -1,6 +1,6 @@
 CPP	      = g++
 ifeq ($(ODROID),1)
-CXXFLAGS      = -O3 -fsigned-char -fdiagnostics-color=auto -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -fsingle-precision-constant -g -ffast-math -I./ -I/usr/include/GL -Wno-write-strings -DODROID
+CXXFLAGS      = -O3 -fsigned-char -fdiagnostics-color=auto -fsingle-precision-constant -g -ffast-math -I./ -I/usr/include/GL -Wno-write-strings -DODROID
 LDFLAGS       = -lGL -lm
 DEST          = /usr/local
 else ifeq ($(PYRA),1)
